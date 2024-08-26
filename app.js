@@ -8,7 +8,7 @@ const cors = require("cors");
 
 const app = express(); // Spinning up the express frame work server
 
-const port = 3000; // Define the port number for the server
+const port = process.env.PORT || 3000; // Define the port number for the server
 
 // CORS (Cross Origin Resource Sharing) when the frontend and backend are from different origins (domains, ports or protocols) and the backend hasnt been configured to accept requests from the frontend origin
 app.use(cors);
